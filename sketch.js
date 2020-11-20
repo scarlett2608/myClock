@@ -46,14 +46,16 @@ function draw(){
     pop();
 
     noFill();
-    stroke(0,255,0);
+    stroke('yellow');
     strokeWeight(7);
-    angleH = map(hours,0,60,0,360);
+    angleH = map(hours,0,12,0,360);
     arc(0,0,320,320,0,angleH)
 
     push();
     rotate(angleH);
-    stroke(0,255,0);
+    stroke('yellow');
     line(0,0,100,0);
     pop();
+
+    console.log(hours+':'+minutes+":"+seconds);
 }
